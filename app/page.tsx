@@ -12,7 +12,7 @@ export default function Home() {
                 <img 
                   src="/logo-transparent.png" 
                   alt="MotoGuiaCR" 
-                  className="h-26 w-auto"
+                  className="h-28 w-auto"
                 />
               </a>
             </div>
