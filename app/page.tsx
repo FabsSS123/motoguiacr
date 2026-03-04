@@ -26,6 +26,12 @@ export default function Home() {
                 <a href="/talleres" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
                   Talleres
                 </a>
+                <a href="/repuestos" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+                  Repuestos
+                </a>
+                <a href="/blog" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
+                  Compra y venta
+                </a>
                 <a href="/clubes" className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">
                   Clubes
                 </a>
@@ -71,11 +77,11 @@ export default function Home() {
 
         <div className="px-4 pb-12 pt-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-            <span className="text-[#f4b942]">AHORRA</span> en cada kilómetro
+            <span className="text-[#f4b942]">Disfruta</span> cada kilómetro
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            La guía de confianza para tu moto
+            Todo para decidir bien sobre tu moto
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -83,7 +89,7 @@ export default function Home() {
               href="/talleres"
               className="px-8 py-3 bg-[#f4b942] text-[#0a0a0a] font-bold rounded-lg hover:bg-[#d4a035] transition-colors"
             >
-              Explorar talleres
+              Explorar
             </a>
             <a
               href="/registro"
@@ -156,6 +162,138 @@ export default function Home() {
         </div>
       </section>
 
+          {/* CÓMO FUNCIONA */}
+      <section className="py-16 px-4 bg-[#1a1a1a]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
+            Cómo <span className="text-[#f4b942]">funciona</span>
+          </h2>
+          <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+            Tres simples pasos para encontrar el servicio perfecto para tu moto
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            
+            {/* Paso 1 */}
+            <div className="relative text-center">
+              <div className="text-5xl mb-6">🔍</div>
+              <div className="absolute top-0 right-0 -mr-4 hidden md:block text-[#f4b942] text-2xl font-bold">→</div>
+              <h3 className="text-xl font-bold text-white mb-3">1. Encuentra servicios</h3>
+              <p className="text-gray-400 text-sm">
+                Filtra por tu marca, modelo y cilindrada. 
+                Encuentra servicios a la medida de tu moto.
+              </p>
+            </div>
+
+            {/* Paso 2 */}
+            <div className="relative text-center">
+              <div className="text-5xl mb-6">✅</div>
+              <div className="absolute top-0 right-0 -mr-4 hidden md:block text-[#f4b942] text-2xl font-bold">→</div>
+              <h3 className="text-xl font-bold text-white mb-3">2. Verifica reputación</h3>
+              <p className="text-gray-400 text-sm">
+                Lee reviews de otros motociclistas. 
+                Revisa fotos, servicios y experiencia real.
+              </p>
+            </div>
+
+            {/* Paso 3 */}
+            <div className="relative text-center">
+              <div className="text-5xl mb-6">💎</div>
+              <h3 className="text-xl font-bold text-white mb-3">3. Aprovecha los beneficios</h3>
+              <p className="text-gray-400 text-sm">
+                Accede a cupones exclusivos. 
+                Contacta con confianza y ahorra en cada servicio.
+              </p>
+            </div>
+
+          </div>
+
+          {/* CTA */}
+          <div className="text-center">
+            <a
+              href="/registro"
+              className="inline-block px-8 py-3 bg-[#f4b942] text-[#0a0a0a] font-bold rounded-lg hover:bg-[#d4a035] transition-colors"
+            >
+              Registra tu moto y empieza
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+              {/* FOOTER */}
+      <footer className="bg-[#0a0a0a] border-t border-gray-800 py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            
+            {/* Logo y descripción */}
+            <div>
+              <h3 className="text-[#f4b942] font-bold text-xl mb-4">MotoGuiaCR</h3>
+              <div>
+                <img 
+                  src="/logo-transparent.png" 
+                  alt="MotoGuiaCR" 
+                  className="h-12 w-auto mb-4"
+                />
+                
+              </div>
+              <p className="text-gray-400 text-sm">
+                Todo para decidir bien sobre tu moto. 
+                Talleres y repuesteras verificados.
+              </p>
+            </div>
+
+            {/* Links */}
+            <div>
+              <h4 className="text-white font-bold mb-4">Explorar</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/talleres" className="text-gray-400 hover:text-[#f4b942] transition-colors">Talleres</a></li>
+                <li><a href="/repuestos" className="text-gray-400 hover:text-[#f4b942] transition-colors">Repuestos</a></li>
+                <li><a href="/clubes" className="text-gray-400 hover:text-[#f4b942] transition-colors">Clubes</a></li>
+                <li><a href="/blog" className="text-gray-400 hover:text-[#f4b942] transition-colors">Blog</a></li>
+              </ul>
+            </div>
+
+            {/* Legal */}
+            <div>
+              <h4 className="text-white font-bold mb-4">Legal</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/terminos" className="text-gray-400 hover:text-[#f4b942] transition-colors">Términos de uso</a></li>
+                <li><a href="/privacidad" className="text-gray-400 hover:text-[#f4b942] transition-colors">Privacidad</a></li>
+                <li><a href="/cookies" className="text-gray-400 hover:text-[#f4b942] transition-colors">Cookies</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          {/* Redes y copyright */}
+          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+            
+            {/* Redes sociales */}
+            <div className="flex space-x-6 mb-4 md:mb-0">
+              <a href="#" className="text-gray-400 hover:text-[#f4b942] transition-colors">
+                <span className="sr-only">Facebook</span>
+                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">...</svg>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-[#f4b942] transition-colors">
+                <span className="sr-only">Instagram</span>
+                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">...</svg>
+              </a>
+              <a href="#" className="text-gray-400 hover:text-[#f4b942] transition-colors">
+                <span className="sr-only">WhatsApp</span>
+                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">...</svg>
+              </a>
+            </div>
+
+            {/* Copyright */}
+            <p className="text-gray-500 text-sm text-center md:text-right">
+              © 2026 MotoGuiaCR. Todos los derechos reservados.<br />
+              Hecho en Costa Rica
+            </p>
+            
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
