@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a]">
-      {/* NAVBAR - NUEVO */}
+      {/* NAVBAR */}
       <nav className="w-full bg-[#0a0a0a]/90 backdrop-blur-sm fixed top-0 z-50 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO - TU CÓDIGO EXISTENTE (solo agregué pt-16) */}
+      {/* HERO */}
       <section className="relative pt-16">
         <div className="relative w-full h-[70vh] md:h-[80vh]">
           <img
@@ -75,7 +75,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Beneficios Exclusivos en tiendas y talleres para tu moto
+            La guía de confianza para tu moto
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -106,6 +106,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* SECCIÓN ¿POR QUÉ MOTOGUIACR? */}
+      <section className="py-16 px-4 bg-[#0a0a0a]">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+            ¿Por qué <span className="text-[#f4b942]">MotoGuiaCR</span>?
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            {/* 1. Verificados */}
+            <div className="text-center p-6 rounded-lg bg-[#1a1a1a] border border-gray-800">
+              <div className="text-4xl mb-4">✓</div>
+              <h3 className="text-xl font-bold text-white mb-2">Verificados</h3>
+              <p className="text-gray-400 text-sm">
+                Talleres y repuesteras revisados.
+              </p>
+            </div>
+
+            {/* 2. Especialistas */}
+            <div className="text-center p-6 rounded-lg bg-[#1a1a1a] border border-gray-800">
+              <div className="text-4xl mb-4">🏍️</div>
+              <h3 className="text-xl font-bold text-white mb-2">Especialistas</h3>
+              <p className="text-gray-400 text-sm">
+                Encuentra expertos en tu marca y cilindrada específica.
+              </p>
+            </div>
+
+            {/* 3. Reviews reales */}
+            <div className="text-center p-6 rounded-lg bg-[#1a1a1a] border border-gray-800">
+              <div className="text-4xl mb-4">⭐</div>
+              <h3 className="text-xl font-bold text-white mb-2">Reviews Reales</h3>
+              <p className="text-gray-400 text-sm">
+                Opiniones de motociclistas que ya usaron el servicio.
+              </p>
+            </div>
+
+            {/* 4. Beneficios */}
+            <div className="text-center p-6 rounded-lg bg-[#1a1a1a] border border-gray-800">
+              <div className="text-4xl mb-4">💎</div>
+              <h3 className="text-xl font-bold text-white mb-2">Beneficios</h3>
+              <p className="text-gray-400 text-sm">
+                Acceso exclusivo a cupones y promociones especiales.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </main>
   );
 }
